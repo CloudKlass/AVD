@@ -57,5 +57,5 @@ The main tasks for this exercise are as follows:
 
 1. On completion of the script close the cloudshell.
 
-1. Open Microosft Entra ID and check that there are two Users, User1 and User2 and there are two Groups AVD-DAG and AVD-Remoteapp, check that User1 is a memeber of AVD-DAG and User2 is a member of AVD-RemoteApp.
+1. Open Microosft Entra ID and check that there are two new users, User1 and User2 and there are two new Groups AVD-DAG and AVD-Remoteapp, check that User1 is a memeber of AVD-DAG and User2 is a member of AVD-RemoteApp.
  
