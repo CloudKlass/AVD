@@ -133,7 +133,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 1. Verify that a **Command Prompt** window appears shortly afterwards. 
 1. In the Command Prompt window, type **hostname** and press the **Enter** key to display the name of the computer on which the Command Prompt is running.
 
-   > **Note**: Verify that the displayed name starts with the **sh-** prefix.
+   > **Note**: Verify that the displayed name starts with the **sh1-** prefix.
 
 1. At the Command Prompt, type **logoff** and press the **Enter** key to log off from the current Remote App session.
 1. Double-click the remaining icons on the **Remote Desktop** page to launch Microsoft Word, Microsoft Excel, and Microsoft PowerPoint.
