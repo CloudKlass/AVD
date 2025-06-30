@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Deploy host pools and session hosts by using the Azure portal (Entra ID)'
+    title: 'Lab 1: Deploy host pools and session hosts by using the Azure portal (Entra ID)'
     module: 'Module 1.4: Implement host pools and session hosts'
 ---
 
@@ -90,16 +90,6 @@ The main tasks for this exercise are as follows:
 
     > **Note**: Do not wait for the provisioning process to complete. This typically takes less than 1 minute.
 
-1. In the web browser displaying the Azure portal, search for and select **Microsoft Entra ID**.
-1. On the **Overview** page of the Microsoft Entra tenant associated with your subscription, in the **Manage** section of the vertical navigation menu, select **Users**.
-1. On the **Users** page, in the **Search** text box, enter the name of the `User1-` account listed on the Resources tab on the right side of the lab session window.
-1. In the list of results of the search, select the user account entry with the matching name.
-1. On the page displaying the proerties of the user account, in the **Manage** section of the vertical navigation menu, select **Groups**.
-1. On the **Groups** page, record the name of the group starting with **AVD-DAG** prefix (you will need it later in this lab).
-1. Navigate back to the **Users** page, in the **Search** text box, enter the name of the `User2-` account listed on the Resources tab on the right side of the lab session window.
-1. In the list of results of the search, select the user account entry with the matching name.
-1. On the page displaying the proerties of the user account, in the **Manage** section of the vertical navigation menu, select **Groups**.
-1. On the **Groups** page, record the name of the group starting with **AVD-RemoteApp** prefix (you will need it later in this lab).
 
 #### Task 2: Deploy an Azure Virtual Desktop host pool
 
@@ -128,7 +118,7 @@ The main tasks for this exercise are as follows:
     |---|---|
     |Add virtual machines|**Yes**|
     |Resource group|**Defaulted to same as host pool**|
-    |Name prefix|**sh**-*random*|
+    |Name prefix|**sh1**|
     |Virtual machine type|**Azure virtual machine**|
     |Virtual machine location|The name of the Azure region where you want to deploy your Azure Virtual Desktop environment|
     |Availability options|**No infrastructure redundancy required**|
@@ -167,7 +157,7 @@ The main tasks for this exercise are as follows:
 1. On the **Azure Virtual Desktop \| Application groups** page, note the existing, auto-generated **az140-21-hp1-DAG** desktop application group, and select it. 
 1. On the **az140-21-hp1-DAG** page, in the **Manage** section of the vertical navigation menu, select **Assignments**.
 1. On the **az140-21-hp1-DAG \| Assignments** page, select **+ Add**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box, type the full name of the **AVD-DAG** group you identified in the first task of this exercise, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box, type the full name of the **AVD-DAG**, select the checkbox next to the group name, and click **Select**.
 1. Navigate back to the **Azure Virtual Desktop \| Application groups** page, select **+ Create**. 
 1. On the **Basics** tab of the **Create an application group** page, specify the following settings and select **Next : Applications >**:
 
@@ -214,7 +204,7 @@ The main tasks for this exercise are as follows:
 
 1. Back on the **Applications** tab of the **Create an application group** page, select **Next : Assignments >**.
 1. On the **Assignments** tab of the **Create an application group** page, select **+ Add Microsoft Entra users or user groups**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp** group you identified in the first task of this exercise, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp**, select the checkbox next to the group name, and click **Select**.
 1. Back on the **Assignments** tab of the **Create an application group** page, select **Next : Workspace >**.
 1. On the **Workspace** tab of the **Create a workspace** page, specify the following setting and select **Review + create**:
 
@@ -261,7 +251,7 @@ The main tasks for this exercise are as follows:
 
 1. Back on the **Applications** tab of the **Create an application group** page, select **Next : Assignments >**.
 1. On the **Assignments** tab of the **Create an application group** page, select **+ Add Microsoft Entra users or user groups**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp** group you identified in the first task of this exercise, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp**, select the checkbox next to the group name, and click **Select**.
 1. Back on the **Assignments** tab of the **Create an application group** page, select **Next : Workspace >**.
 1. On the **Workspace** tab of the **Create a workspace** page, specify the following setting and select **Review + create**:
 
@@ -306,11 +296,11 @@ The main tasks for this exercise are as follows:
 1. On the **az140-21e-RG** page, in the vertical navigation menu, select **Access control (IAM)**.
 1. On the **az140-21e-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
 1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Virtual Machine User Login**, in the list of results, select **Virtual Machine User Login**, and then select **Next**.
-1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select members**, in the **Select members** pane, locate the **AVD-RemoteApp** group you identified in the first task of this exercise, and click **Select**.
+1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select members**, in the **Select members** pane, locate the **AVD-RemoteApp**, and click **Select**.
 1. Back on the **Members** tab of the **Add role assignment** page, select **Next**.
 1. On the **Assignment type** tab of the **Add role assignment** page, set the **Assignment type** to **Active** and then select **Review + assign**.
 1. On the **Review + assign** tab of the **Add role assignment** page, select **Review + assign**. 
 1. Back on the **az140-21e-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
 1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Virtual Machine Administrator Login**, in the list of results, select **Virtual Machine Administrator Login**, and then select **Next**.
-1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select memebers**, in the **Select members** pane, locate the **AVD-DAG** group you identified in the first task of this exercise, and click **Select**.
+1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select memebers**, in the **Select members** pane, locate the **AVD-DAG**, and click **Select**.
 1. Back on the **Members** tab of the **Add role assignment** page, set the **Assignment type** to **Active**, select **Review + assign** and then select **Review + assign** again. 
