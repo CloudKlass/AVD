@@ -83,7 +83,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 
 #### Task 2: Install Microsoft Remote Desktop client on a Windows 11 computer
 
-1. From the lab computer, start a web browser, navigate to the [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows]([https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi]) page, scroll down to the section **Download and install the Remote Desktop client (MSI)**, and select the [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2139369) link. 
+1. From the lab computer, start a web browser, navigate to the [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows][https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi] page, scroll down to the section **Download and install the Remote Desktop client (MSI)**, and select the [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2139369) link. 
 1. Open File Explorer, navigate to the **Downloads** folder, and launch the installation of the newly downloaded MSI file. 
 1. In the **Remote Desktop Setup** window, when prompted, accept the terms of the licensing agreement and choose the option to **Install for all users of this machine**. If prompted, accept the User Account Control prompt to proceed with the installation.
 1. Once the installation completes, ensure that the **Launch Remote Desktop when setup exits** checkbox is selected and select **Finish** to start the Microsoft Remote Desktop client.
