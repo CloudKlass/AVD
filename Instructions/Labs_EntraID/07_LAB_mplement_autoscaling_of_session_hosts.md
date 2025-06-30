@@ -236,8 +236,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **az140-21-hp1 \| Session hosts** page, in the vertical navigation menu, in the **Manage** section, select **Scaling plans** and then, on the **Scaling plans** page, select **az140-scalingplan412e**.
 1. On the **az140-scalingplan412e** page, in the vertical navigation menu, in the **Settings** section, select **Schedules** and then select **week_schedule**.
-1. In the **week_schedule** pane, navigate to the **Ramp-down** tab and adjust the value of the **Start time (12 hour system)** setting to any time between the 
-**Start time (12 hour system)** of the **Peek hours** phase and your current time.
+1. In the **week_schedule** pane, navigate to the **Peak hours** tab and adjust the value of the **Start time (12 hour system)** setting to the current time, naviagte to the **Ramp-down** tab and adjust the time to one minute later than the time you just set.
 
     > **Note**: You might need to adjust the value of **Start time (12 hour system)** of the **Peek hours** phase.
 
