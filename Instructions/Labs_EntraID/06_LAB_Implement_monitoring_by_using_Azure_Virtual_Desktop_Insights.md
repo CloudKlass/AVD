@@ -54,7 +54,14 @@ The main tasks for this exercise are as follows:
 1. On the **Resource providers** tab, in the search text box, enter **Microsoft.Insights**, in the list of results, select the small circle to the left of the **Microsoft.Insights** entry, and then select **Register**.
 
     > **Note**: Wait for the registration process to complete. This typically takes about 1 minute. Use the **Refresh** toolbar button to display the up-to-date value of the registration status.
+    
+> **Note**  If you previously shut down the Azure VMs rin the following commannd.
 
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```
 #### Task 2: Create an Azure Log Analytics workspace
 
 > **Note**: Azure Virtual Desktop Insights is a dashboard built on Azure Monitor Workbooks that facilitates monitoring of Azure Virtual Desktop environments. 
