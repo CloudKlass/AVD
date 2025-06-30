@@ -53,7 +53,7 @@ The main tasks for this exercise are as follows:
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Subscriptions**, on the **Subscriptions** page, select the Azure subscription you are using in this lab, and, in the vertical navigation menu, in the **Settings** section, select **Resource providers**.
 1. On the **Resource providers** tab, in the search text box, enter **Microsoft.Insights**, in the list of results, select the small circle to the left of the **Microsoft.Insights** entry, and then select **Register**.
 
-    > **Note**: Wait for the registration process to complete. This typically takes about 1 minute. Use the **Refresh** toolbar button to display the up-to-date value of the registration status.
+> **Note**: Wait for the registration process to complete. This typically takes about 1 minute. Use the **Refresh** toolbar button to display the up-to-date value of the registration status.
     
 > **Note**  If you previously shut down the Azure VMs rin the following commannd.
 
