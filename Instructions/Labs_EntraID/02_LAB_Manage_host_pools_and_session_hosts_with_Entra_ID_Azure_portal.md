@@ -56,7 +56,7 @@ The main tasks for this exercise are as follows:
 
   ```powershell
     Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
-  ```]
+  ```
 
 
 #### Task 1: Deploy additional Azure Virtual Desktop host pool session hosts
