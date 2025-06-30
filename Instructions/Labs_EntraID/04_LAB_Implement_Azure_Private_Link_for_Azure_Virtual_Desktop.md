@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Implement Azure Private Link for Azure Virtual Desktop'
+    title: 'Lab 4: Implement Azure Private Link for Azure Virtual Desktop'
     module: 'Module 1.1: Plan, implement, and manage networking for Azure Virtual Desktop'
 ---
 
