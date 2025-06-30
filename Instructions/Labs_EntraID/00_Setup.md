@@ -59,3 +59,4 @@ The main tasks for this exercise are as follows:
 
 1. Open Microosft Entra ID and check that there are two new users, User1 and User2 and there are two new Groups AVD-DAG and AVD-Remoteapp, check that User1 is a memeber of AVD-DAG and User2 is a member of AVD-RemoteApp.
  
+1. The password for both user can be found in the "setup.ps1" script.
