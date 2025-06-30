@@ -10,6 +10,8 @@ Hyperlinks to each of the lab exercises and demos are listed below.
 
 ## Labs \(Entra ID\)
 
+Required labs files can be [DOWNLOADED HERE](https://github.com/CloudKlass/AVD/archive/refs/heads/main.zip).
+
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs_EntraID'" %}
 | Module | Lab |
 | --- | --- | 
