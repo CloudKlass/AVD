@@ -49,6 +49,16 @@ The main tasks for this exercise are as follows:
 1. Configure scheduled agent updates
 1. Configure RDP properties of the host pool
 
+
+> **Note**  If you previously shut down the Azure VMs rin the following commannd.
+
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```]
+
+
 #### Task 1: Deploy additional Azure Virtual Desktop host pool session hosts
 
 1. If needed, from the lab computer, start a web browser, navigate to the Azure portal and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
