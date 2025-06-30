@@ -156,7 +156,7 @@ The main tasks for this exercise are as follows:
 1. On the **Azure Virtual Desktop \| Application groups** page, note the existing, auto-generated **az140-21-hp1-DAG** desktop application group, and select it. 
 1. On the **az140-21-hp1-DAG** page, in the **Manage** section of the vertical navigation menu, select **Assignments**.
 1. On the **az140-21-hp1-DAG \| Assignments** page, select **+ Add**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box select the checkbox next to the group name**AVD-DAG**, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box select the checkbox next to the group name **AVD-DAG**, and click **Select**.
 1. Navigate back to the **Azure Virtual Desktop \| Application groups** page, select **+ Create**. 
 1. On the **Basics** tab of the **Create an application group** page, specify the following settings and select **Next : Applications >**:
 
