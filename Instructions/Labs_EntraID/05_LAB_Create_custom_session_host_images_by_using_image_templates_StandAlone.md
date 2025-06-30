@@ -56,7 +56,7 @@ The main tasks for this exercise are as follows:
 
 1. If needed, from the lab computer, start a web browser, navigate to the Azure portal and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-    > **Note**: Use the credentials of the `User1-` account listed on the Resources tab on the right side of the lab session window.
+    > **Note**: Use the credentials of the `User1`.
 
 1. In the Azure portal, start a PowerShell session in the Azure Cloud Shell.
 
@@ -91,7 +91,7 @@ The main tasks for this exercise are as follows:
     |Subscription|The name of the Azure subscription you are using in this lab|
     |Resource group|The name of a new resource group **az140-15a-RG**|
     |Region|The name of the Azure region where you want to deploy your Azure Virtual Desktop environment|
-    |Name|**az140**-*random*-**uami**|
+    |Name|**az140**-**uami**|
 
 1. On the **Review + create** tab, select **Create**.
 
@@ -166,11 +166,9 @@ The main tasks for this exercise are as follows:
 1. Refresh the **Resource groups** page and, in the list of resource groups, select **az140-15b-RG**.
 1. On the **az140-15b-RG** page, in the vertical navigation menu, select **Access control (IAM)**.
 1. On the **az140-15b-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
-1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Desktop Virtualization Image Creator** (*random*), in the list of results, select **Desktop Virtualization Image Creator** (*random*), and then select **Next**.
+1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Desktop Virtualization Image Creator**, in the list of results, select **Desktop Virtualization Image Creator** , and then select **Next**.
 
-    >**Note**: Make sure to replace the *random* placeholder with the same string you used when defining the new custom RBAC role.
-
-1. On the **Members** tab of the **Add role assignment** page, select the **Managed identity** option, click **+ Select members**, in the **Select managed identities** pane, in the **Managed identity** drop-down list, select **User-assigned managed identity**, in the list of user-assigned managed identities, select **az140**-*random*-**uami** (where the *random* placehodler represents the same string you used when defining the new custom RBAC role), and then click **Select**.
+1. On the **Members** tab of the **Add role assignment** page, select the **Managed identity** option, click **+ Select members**, in the **Select managed identities** pane, in the **Managed identity** drop-down list, select **User-assigned managed identity**, in the list of user-assigned managed identities, select **az140**-**uami**, and then click **Select**.
 1. Back on the **Members** tab of the **Add role assignment** page, select **Review + assign**.
 1. On the **Review + assign** tab, select **Review + assign**. 
 
@@ -231,7 +229,7 @@ The main tasks for this exercise are as follows:
     |Subscription|The name of the Azure subscription you are using in this lab|
     |Resource group|**az140-15b-RG**|
     |Location|The name of the Azure region where you want to deploy your Azure Virtual Desktop environment|
-    |Managed identity|**az140**-*random*-**uami**|
+    |Managed identity|**az140**-**uami**|
 
 1. On the **Source image** tab of the **Create custom image template** page, specify the following settings and select **Next**:
 
@@ -361,13 +359,12 @@ The main tasks for this exercise are as follows:
 
 1. On the **Session hosts** tab of the **Create a host pool** page, specify the following settings (leave other settings with their default values):
 
-    > **Note**: When setting the **Name prefix** value, switch to the Resources tab on the right side of the lab session window and identify the string of characters between *User1-* and the *@* character. Use this string to replace the *random* placeholder.
-
+    
     |Setting|Value|
     |---|---|
     |Add virtual machines|**Yes**|
     |Resource group|**Defaulted to same as host pool**|
-    |Name prefix|**sh0**_random_|
+    |Name prefix|**sh0**|
     |Virtual machine type|**Azure virtual machine**|
     |Virtual machine location|The name of the Azure region where you want to deploy your Azure Virtual Desktop environment|
     |Availability options|**No infrastructure redundancy required**|
