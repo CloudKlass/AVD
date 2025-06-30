@@ -50,7 +50,7 @@ The main tasks for this exercise are as follows:
 1. Configure RDP properties of the host pool
 
 
-> **Note**  If you previously shut down the Azure VMs rin the following commannd.
+> **Note**  If you previously shut down the Azure VMs run the following commannd.
 
 1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
 
