@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Manage host pools and session hosts by using the Azure portal (Entra ID)'
+    title: 'Lab 2: Manage host pools and session hosts by using the Azure portal (Entra ID)'
     module: 'Module 3.2: Plan and implement user experience and client settings'
 ---
 
