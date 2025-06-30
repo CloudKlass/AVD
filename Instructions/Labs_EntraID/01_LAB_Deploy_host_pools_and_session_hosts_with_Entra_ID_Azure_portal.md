@@ -42,6 +42,14 @@ The main tasks for this exercise are as follows:
 1. Create an Azure Virtual Desktop workspace
 1. Grant access to Azure Virtual Desktop host pools
 
+> **Note**  If you previously shut down the Azure VMs rin the following commannd.
+
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```]
+
 #### Task 1: Prepare the Azure subscription for deployment of an Azure Virtual Desktop host pool
 
 1. From the lab computer, start a web browser, navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com) and sign in by providing the credentials of a user account with the Owner role in the subscription you will be using in this lab.
