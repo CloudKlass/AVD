@@ -43,6 +43,13 @@ The main tasks for this exercise are as follows:
 1. Subscribe to a Azure Virtual Desktop workspace
 1. Test Azure Virtual Desktop apps
 
+> **Note**  If you previously shut down the Azure VMs rin the following commannd.
+
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```
 
 #### Task 1: Adjust RDP properties of the Azure Virtual Desktop host pool
 
@@ -131,3 +138,9 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 1. At the Command Prompt, type **logoff** and press the **Enter** key to log off from the current Remote App session.
 1. Double-click the remaining icons on the **Remote Desktop** page to launch Microsoft Word, Microsoft Excel, and Microsoft PowerPoint.
 1. Close each session window.
+
+> **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
+
+   ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+   ```
