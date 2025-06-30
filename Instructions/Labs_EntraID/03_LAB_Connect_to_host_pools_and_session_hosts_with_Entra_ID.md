@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Connect to session hosts (Entra ID)'
+    title: 'Lab 3: Connect to session hosts (Entra ID)'
     module: 'Module 3.2: Plan and implement user experience and client settings'
 ---
 
