@@ -46,7 +46,7 @@ The main tasks for this exercise are as follows:
 
 1. From the lab computer, start a web browser, navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com) and sign in by providing the credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-    > **Note**: Use the credentials of the `User1-` account listed on the Resources tab on the right side of the lab session window.
+    > **Note**: Use the credentials of the `User1`.
 
 1. In the Azure portal, start a PowerShell session in the Azure Cloud Shell.
 
