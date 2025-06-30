@@ -112,7 +112,6 @@ The main tasks for this exercise are as follows:
 
 1. On the **Session hosts** tab of the **Create a host pool** page, specify the following settings and select **Next : Workspace >** (leave other settings with their default values):
 
-    > **Note**: When setting the **Name prefix** value, switch to the Resources tab on the right side of the lab session window and identify the string of characters between *User1-* and the *@* character. Use this string to replace the *random* placeholder.
 
     |Setting|Value|
     |---|---|
