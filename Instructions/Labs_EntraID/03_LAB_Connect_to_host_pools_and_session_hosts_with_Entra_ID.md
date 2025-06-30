@@ -120,7 +120,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
    > **Note**: This will automatically terminate the Remote Desktop session. 
 
 1. Back in the **Remote Desktop** window, select the ellipsis (`...`) icon to the right of the **az140-21-ws1** workspace entry, select **Unsubscribe** and, when prompted to confirm, select **Continue**.
-1. In the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of the second Entra ID user account which you can locate on the **Resources** tab in the right pane of the lab interface window.
+1. In the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of User2 Entra ID.
 
    > **Note**: Select the user account which is the member of the Entra group with the **AVD-RemoteApp** prefix.
 
