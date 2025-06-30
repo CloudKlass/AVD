@@ -53,7 +53,7 @@ The main tasks for this exercise are as follows:
 
 1. If needed, from the lab computer, start a web browser, navigate to the Azure portal and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-    > **Note**: Use the credentials of the `User1-` account listed on the Resources tab on the right side of the lab session window.
+    > **Note**: Use the credentials of the `User1`.
 
 1. In the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop** and, on the **Azure Virtual Desktop** page, in the vertical menu bar, in the **Manage** section, select **Host pools**.
 1. On the **Azure Virtual Desktop \| Host pools** page, in the list of host pools, select **az140-21-hp1**.
@@ -67,7 +67,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Resource group|**az140-21e-RG**|
-    |Name prefix|**sh**-*random*|
+    |Name prefix|**sh1**|
     |Virtual machine location|The name of the Azure region into which you deployed the first two session host VMs|
     |Availability options|**No infrastructure redundancy required**|
     |Security type|**Trusted launch virtual machines**|
