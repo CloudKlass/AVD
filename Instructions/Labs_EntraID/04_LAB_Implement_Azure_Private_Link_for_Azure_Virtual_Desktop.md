@@ -358,7 +358,7 @@ The main tasks for this exercise are as follows:
 1. When prompted to sign in, in the **Windows Security** dialog box, enter the password of the same Microsoft Entra user account you used to connect to the target Azure Virtual Desktop environment.
 1. Verify that a **Command Prompt** window appears shortly afterwards. 
 1. At the Command Prompt, type **logoff** and press the **Enter** key to log off from the current Remote App session.
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, in **Computer infrastructure** | Virtual machines select "az140-111e-vm0", from the top menu select stop.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, in **Computer infrastructure**  Virtual machines select "az140-111e-vm0", from the top menu select stop.
 
    > **Note**: Optionally, you might consider attempting to subscribe to the feed and connect to The Azure Virtual Desktop workspace from the lab computer to validate that this connection will fail. 
 
