@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Implement autoscaling of session hosts'
+    title: 'Lab 7: Implement autoscaling of session hosts'
     module: 'Module 4.1: Monitor and manage Azure Virtual Desktop services'
 ---
 
