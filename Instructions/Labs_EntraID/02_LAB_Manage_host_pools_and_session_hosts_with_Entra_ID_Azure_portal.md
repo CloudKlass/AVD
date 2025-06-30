@@ -200,3 +200,9 @@ The main tasks for this exercise are as follows:
 
 1. On the **az140-21-hp1\|RDP Properties** page, select the **Display settings** tab and review the available configuration options, including support for multiple displays, smart sizing, and specific desktop sizes (in pixels). 
 1. On the **az140-21-hp1\|RDP Properties** page, select the **Advanced** tab and review the existing configuration settings. Note that these settings reflect the changes you made earlier in this task.
+
+> **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
+
+   ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+   ```
