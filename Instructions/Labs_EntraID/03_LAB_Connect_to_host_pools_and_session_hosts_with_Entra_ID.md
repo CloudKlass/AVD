@@ -92,7 +92,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 
 #### Task 3: Subscribe to a Azure Virtual Desktop workspace
 
-1. On the lab computer, switch to the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of the `User1` Entra ID user account which you can locate on the **Resources** tab in the right pane of the lab interface window.
+1. On the lab computer, switch to the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of the `User1` Entra ID user account which you can locate in Microsoft Entra.
 
    > **Note**: Select the user account which is the member of the Entra group with the **AVD-DAG** prefix.
 
