@@ -48,7 +48,7 @@ The main tasks for this exercise are as follows:
 
     > **Note**: If prompted, in the **Getting started** pane, in the **Subscription** drop-down list, select the name of the Azure subscription you are using in this lab and then select **Apply**.
 
-1. In the PowerShell session in the Azure Cloud Shell pane, use the Manage files section to upload 'Setup.ps1.
+1. In the PowerShell session in the Azure Cloud Shell pane, use the Manage files section to upload 'Setup.ps1, From the "Labs\Setup folder"
 
   
 1. At the prompt type 'Connect-AzureAD'.
