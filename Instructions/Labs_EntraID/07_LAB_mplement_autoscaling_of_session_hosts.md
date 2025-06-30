@@ -46,6 +46,15 @@ The main tasks for this exercise are as follows:
 1. Evaluate the autoscaling functionality
 1. Disable host pool autoscaling
 
+
+> **Note**  If you previously shut down the Azure VMs rin the following commannd.
+
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```
+
 #### Task 1: Assign the required RBAC role to an Azure Virtual Desktop service principal
 
 > **Note**: For autoscale plans to work, you need to grant the Azure Virtual Desktop service principal the permissions to manage the power state of the session host VMs. These permissions can be granted by using the built-in **Desktop Virtualization Power On Off Contributor** RBAC role. It is important to keep in mind that the role assignment must be performed at the subscription scope. Assigning this role at any level lower than your subscription, such as the resource group, host pool, or VM, will prevent autoscale from working properly. 
