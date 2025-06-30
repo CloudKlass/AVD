@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Implement monitoring by using Azure Virtual Desktop Insights'
+    title: 'Lab 6: Implement monitoring by using Azure Virtual Desktop Insights'
     module: 'Module 4.1: Monitor and manage Azure Virtual Desktop services'
 ---
 
