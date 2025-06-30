@@ -73,6 +73,15 @@ The main tasks for this exercise are as follows:
 
     > **Note**: Wait for the re-registration process to complete. This typically takes less than 1 minute.
 
+    > **Note**  If you previously shut down the Azure VMs rin the following commannd.
+
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMsyou will be using in this lab:
+
+  ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+  ```
+
+
 #### Task 2: Create an Azure virtual network subnet
 
 > **Note**: You could use an existing subnet of an Azure virtual network to implement private endpoints in the lab scenario, but it is a common practice to use a dedicated subnet for this purpose.
@@ -361,3 +370,9 @@ The main tasks for this exercise are as follows:
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Host pools** and, on the **Azure Virtual Desktop \| Host pools** page, select **az140-21-hp1**. 
 1. On the **az140-21-hp1** page, in the vertical navigation menu, in the **Settings** section, select **Networking**.
 1. On the **az140-21-hp1 \| Networking** page, on the **Public access** tab, select the option **Enable public access from all networks**, and then select **Save**.
+
+> **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
+
+   ```powershell
+    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+   ```
