@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Create custom session host images by using image templates'
+    title: 'Lab 5: Create custom session host images by using image templates'
     module: 'Module 1.5: Create and manage session host images'
 ---
 
