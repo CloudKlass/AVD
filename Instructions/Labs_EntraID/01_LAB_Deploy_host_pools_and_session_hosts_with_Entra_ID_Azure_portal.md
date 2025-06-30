@@ -156,7 +156,7 @@ The main tasks for this exercise are as follows:
 1. On the **Azure Virtual Desktop \| Application groups** page, note the existing, auto-generated **az140-21-hp1-DAG** desktop application group, and select it. 
 1. On the **az140-21-hp1-DAG** page, in the **Manage** section of the vertical navigation menu, select **Assignments**.
 1. On the **az140-21-hp1-DAG \| Assignments** page, select **+ Add**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box, type the full name of the **AVD-DAG**, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, in the search box select the checkbox next to the group name**AVD-DAG**, and click **Select**.
 1. Navigate back to the **Azure Virtual Desktop \| Application groups** page, select **+ Create**. 
 1. On the **Basics** tab of the **Create an application group** page, specify the following settings and select **Next : Applications >**:
 
@@ -203,7 +203,7 @@ The main tasks for this exercise are as follows:
 
 1. Back on the **Applications** tab of the **Create an application group** page, select **Next : Assignments >**.
 1. On the **Assignments** tab of the **Create an application group** page, select **+ Add Microsoft Entra users or user groups**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp**, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, select the checkbox next to the group name **AVD-RemoteApp**, and click **Select**.
 1. Back on the **Assignments** tab of the **Create an application group** page, select **Next : Workspace >**.
 1. On the **Workspace** tab of the **Create a workspace** page, specify the following setting and select **Review + create**:
 
@@ -250,7 +250,7 @@ The main tasks for this exercise are as follows:
 
 1. Back on the **Applications** tab of the **Create an application group** page, select **Next : Assignments >**.
 1. On the **Assignments** tab of the **Create an application group** page, select **+ Add Microsoft Entra users or user groups**.
-1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, type the full name of the **AVD-RemoteApp**, select the checkbox next to the group name, and click **Select**.
+1. On the **Select Microsoft Entra users or user groups** page, select **Groups**, select the checkbox next to the group name **AVD-RemoteApp**, and click **Select**.
 1. Back on the **Assignments** tab of the **Create an application group** page, select **Next : Workspace >**.
 1. On the **Workspace** tab of the **Create a workspace** page, specify the following setting and select **Review + create**:
 
