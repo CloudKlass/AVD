@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Setup ready for AZ-140 Course(Entra ID)'
+    title: 'Lab: Setup ready for AZ-140 Course (Entra ID)'
     module: 'Module 0.0: Setup'
 ---
 
