@@ -325,7 +325,6 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Enable basic plan for free|disabled|
     |Patch orchestration options|**Manual updates**|
 
 1. On the **Monitoring** tab of the **Create a virtual machine** page, specify the following settings (leave other settings with their default values), and then select **Review + create**:
@@ -377,3 +376,4 @@ The main tasks for this exercise are as follows:
    ```powershell
     Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
    ```
+
