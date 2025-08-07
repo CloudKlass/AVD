@@ -109,12 +109,12 @@ The main tasks for this exercise are as follows:
     $subscriptionId = (Get-AzSubscription).Id
     ```
 
-1. Run the following command to create the role definition of the new custom role including its assignable scope value and store it in the **$jsonContent** variable (make sure to replace the *random* placeholder with the same string you identified in the previous task):
+1. Run the following command to create the role definition of the new custom role including its assignable scope value and store it in the **$jsonContent** variable :
 
     ```powershell
-    $jsonContent = @"
+   $jsonContent = @"
     {
-      "Name": "Desktop Virtualization Image Creator (random)",
+      "Name": "Desktop Virtualization Image Creator",
       "IsCustom": true,
       "Description": "Create custom image templates for Azure Virtual Desktop images.",
       "Actions": [
@@ -134,8 +134,9 @@ The main tasks for this exercise are as follows:
         "/subscriptions/$subscriptionId/resourceGroups/az140-15b-RG"
       ]
     }
-    "@
+   "@
     ```
+>**Note** If this command does not run correctly, paste the content into notepad and remove any white spaces before the first and last line , then repaste in the cloudshell.
 
 1. Run the following command to store the content of the **$jsonContent** variable in a file named **CustomRole.json**:
 
@@ -402,3 +403,4 @@ The main tasks for this exercise are as follows:
 1. On the **Review + create** tab of the **Create a host pool** page, select **Create**.
 
     > **Note**: Wait for the deployment to complete. This might take about 10-15 minutes.
+
