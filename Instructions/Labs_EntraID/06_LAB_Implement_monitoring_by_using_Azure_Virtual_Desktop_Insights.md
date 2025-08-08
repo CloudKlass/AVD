@@ -60,7 +60,7 @@ The main tasks for this exercise are as follows:
 1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
 
   ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Start-AzVM
   ```
 #### Task 2: Create an Azure Log Analytics workspace
 
@@ -74,8 +74,8 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|The name of a new resource group **az140-411e-RG**|
-    |Name|**az140-laworkspace41e**|
+    |Resource group|The name of a new resource group **az140-41-RG**|
+    |Name|**az140-laworkspace41**|
     |Region|The name of the Azure region where you deployed the Azure Virtual Desktop environment|
 
 1. On the **Review + Create** page, select **Create**.
@@ -91,7 +91,7 @@ The main tasks for this exercise are as follows:
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop** and, on the **Azure Virtual Desktop** page, in the vertical navigation menu, in the **Monitoring** section, select **Workbooks**.
 1. In the list of **Windows Virtual Desktop** workbooks, in the **Windows Virtual Desktop** section, select the **Insights** workbook.
 1. On the **Azure Virtual Desktop \| Workbooks \| Insights** page, review the warning messages indicating that the workspace and session hosts are not sending data to the workspace and then select the **Configuration workbook** link to repair the issue.
-1. On the **CheckAMAConfiguration** page, on the **Resource diagnostics settings** tab, in the **Log Analytics workspace** drop-down list, select **az140-laworkspace41e**.
+1. On the **CheckAMAConfiguration** page, on the **Resource diagnostics settings** tab, in the **Log Analytics workspace** drop-down list, select **az140-laworkspace41**.
 1. On the **CheckAMAConfiguration** page, on the **Resource diagnostics settings** tab, in the **Host pool az140-21-hp1** section, review the warning message indicating that no existing diagnostic configuration was found for the selected host pool and then select **Configure host pool**.
 1. In the **Deploy Template** pane, select **Deploy**.
 
@@ -118,7 +118,7 @@ The main tasks for this exercise are as follows:
 1. On the **CheckAMAConfiguration** page, on the **Resource diagnostics settings** tab, select the **Refresh** icon (a circular arrow) in the toolbar.
 1. Review the **Workspace az140-21-ws1** section and verify that the diagnostic settings are enabled for **allLogs** and that thre are no remaining warning messages.
 1. Navigate to the top of the **CheckAMAConfiguration** page and switch to the **Session host data settings** tab.
-1. On the **Session host data settings** tab, in the **Create DCR** section, in the **Workspace destination** drop-down list, select **az140-laworkspace41e** and then select **Create data collection rule**.
+1. On the **Session host data settings** tab, in the **Create DCR** section, in the **Workspace destination** drop-down list, select **az140-laworkspace41** and then select **Create data collection rule**.
 1. In the **Deploy Template** pane, select **Deploy**.
 
     > **Note**: Wait for the deployment to complete. This typically takes less than 1 minute.
@@ -154,3 +154,4 @@ The main tasks for this exercise are as follows:
 1. Next, review all the remaining tabs on the **Azure Virtual Desktop \| Insights** page, including **Connection Reliability**, **Connection Diagnostics**, **Connection Performance**, **Users**, **Utilization**, **Clients**, and **Alerts**.
 
     > **Note**: Consider revisiting these tabs of the Insights page once you complete the subsequent labs to review the charts representing collected telemetry.
+
