@@ -68,8 +68,8 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|The name of a new resource group **az140-11e-RG**|
-    |Virtual network name|**az140-vnet11e**|
+    |Resource group|The name of a new resource group **az140-11-RG**|
+    |Virtual network name|**az140-vnet11**|
     |Region|The name of the Azure region where you want to deploy the Azure Virtual Desktop environment|
 
 1. On the **Security** tab, accept the default settings and select **Next**.
@@ -100,7 +100,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|The name of a new resource group **az140-21e-RG**|
+    |Resource group|The name of a new resource group **az140-21-RG**|
     |Host pool name|**az140-21-hp1**|
     |Location|The name of the Azure region where you want to deploy your Azure Virtual Desktop environment|
     |Validation environment|**No**|
@@ -129,7 +129,7 @@ The main tasks for this exercise are as follows:
     |OS disk type|**Standard SSD**|
     |OS disk size|**Default size (128GiB)**|
     |Boot Diagnostics|**Enable with managed storage account (recommended)**|
-    |Virtual network|**az140-vnet11e**|
+    |Virtual network|**az140-vnet11**|
     |Subnet|**hp1-Subnet**|
     |Network security group|**Basic**|
     |Public inbound ports|**No**|
@@ -164,7 +164,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-21e-RG**|
+    |Resource group|**az140-21-RG**|
     |Host pool|**az140-21-hp1**|
     |Application group type|**Remote App**|
     |Application group name|**az140-21-hp1-Office365-RAG**|
@@ -225,7 +225,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-21e-RG**|
+    |Resource group|**az140-21-RG**|
     |Host pool|**az140-21-hp1**|
     |Application group type|**RemoteApp**|
     |Application group name|**az140-21-hp1-Utilities-RAG**|
@@ -272,7 +272,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-21e-RG**|
+    |Resource group|**az140-21-RG**|
     |Workspace name|**az140-21-ws1**|
     |Friendly name|**az140-21-ws1**|
     |Location|The name of the Azure region into which you deployed resources in the first exercise of this lab or a region close to it|
@@ -292,15 +292,15 @@ The main tasks for this exercise are as follows:
 
 > **Note**: When usign Microsoft Entra joined session hosts, you need to assign to Azure Virtual Desktop users and administrators appropriate Azure role-based access control (RBAC) roles. In particular, the *Virtual Machine User Login* role is required to sign in to session hosts and the *Virtual Machine Administrator Login* role is required for the local administrative privileges. 
 
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Resource groups** and, on the **Resource groups** page, select **az140-21e-RG**.
-1. On the **az140-21e-RG** page, in the vertical navigation menu, select **Access control (IAM)**.
-1. On the **az140-21e-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Resource groups** and, on the **Resource groups** page, select **az140-21-RG**.
+1. On the **az140-21-RG** page, in the vertical navigation menu, select **Access control (IAM)**.
+1. On the **az140-21-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
 1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Virtual Machine User Login**, in the list of results, select **Virtual Machine User Login**, and then select **Next**.
 1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select members**, in the **Select members** pane, locate the **AVD-RemoteApp**, and click **Select**.
 1. Back on the **Members** tab of the **Add role assignment** page, select **Next**.
 1. On the **Assignment type** tab of the **Add role assignment** page, set the **Assignment type** to **Active** and then select **Review + assign**.
 1. On the **Review + assign** tab of the **Add role assignment** page, select **Review + assign**. 
-1. Back on the **az140-21e-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
+1. Back on the **az140-21-RG\|Access control (IAM)** page, select **+ Add** and, in the drop-down menu, select **Add role assignment**.
 1. On the **Role** tab of the **Add role assignment** page, ensure that the **Job function roles** tab is selected, in the search textbox, enter **Virtual Machine Administrator Login**, in the list of results, select **Virtual Machine Administrator Login**, and then select **Next**.
 1. On the **Members** tab of the **Add role assignment** page, ensure that the **User, group, or service principal** option is selected, click **+ Select memebers**, in the **Select members** pane, locate the **AVD-DAG**, and click **Select**.
 1. Back on the **Members** tab of the **Add role assignment** page, set the **Assignment type** to **Active**, select **Review + assign** and then select **Review + assign** again.
@@ -308,5 +308,6 @@ The main tasks for this exercise are as follows:
 > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
 
    ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
    ```
+
