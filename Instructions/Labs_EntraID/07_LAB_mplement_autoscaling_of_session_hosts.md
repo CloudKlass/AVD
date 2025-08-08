@@ -116,10 +116,10 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|The name of a new resource group **az140-412e-RG**|
-    |Scaling plan name|**az140-scalingplan412e**|
+    |Resource group|The name of a new resource group **az140-42-RG**|
+    |Scaling plan name|**az140-scalingplan42**|
     |Region|The name of the Azure region where you deployed the Azure Virtual Desktop environment|
-    |Friendly name|**az140-scalingplan412e**|
+    |Friendly name|**az140-scalingplan42**|
     |Time zone|The local time zone of the Azure region where you deployed the Azure Virtual Desktop environment|
     |Host pool type|**Pooled**|
     |Scaling method|**Power management autoscaling**|
@@ -234,8 +234,8 @@ The main tasks for this exercise are as follows:
 
     > **Note**: Next, you will evaluate the **Ramp-down** capacity threshold setting by adjusting its time window. 
 
-1. On the **az140-21-hp1 \| Session hosts** page, in the vertical navigation menu, in the **Manage** section, select **Scaling plans** and then, on the **Scaling plans** page, select **az140-scalingplan412e**.
-1. On the **az140-scalingplan412e** page, in the vertical navigation menu, in the **Settings** section, select **Schedules** and then select **week_schedule**.
+1. On the **az140-21-hp1 \| Session hosts** page, in the vertical navigation menu, in the **Manage** section, select **Scaling plans** and then, on the **Scaling plans** page, select **az140-scalingplan42**.
+1. On the **az140-scalingplan42** page, in the vertical navigation menu, in the **Settings** section, select **Schedules** and then select **week_schedule**.
 1. In the **week_schedule** pane, navigate to the **Peak hours** tab and adjust the value of the **Start time (12 hour system)** setting to the current time, naviagte to the **Ramp-down** tab and adjust the time to one minute later than the time you just set.
 
     > **Note**: You might need to adjust the value of **Start time (12 hour system)** of the **Peek hours** phase.
@@ -258,6 +258,7 @@ The main tasks for this exercise are as follows:
 
 > **Note**: To ensure that the autoscaling configuration will not affect other labs, you will remove the host pool assignment of the scaling plan you implemented in this lab.
 
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Scaling plans**, and then, on the **Scaling plans** page, select **az140-scalingplan412e**.
-1. On the **az140-scalingplan412e** page, in the **Manage** section, select **Host pool assignments**.
-1. On the **az140-scalingplan412e \| Host pool assignments** page, select **az140-21-hp1**, then select **Unassign** and, when prompted to confirm, in the **Unassign host pool** dialog box, select **Unassign**.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Scaling plans**, and then, on the **Scaling plans** page, select **az140-scalingplan42**.
+1. On the **az140-scalingplan42** page, in the **Manage** section, select **Host pool assignments**.
+1. On the **az140-scalingplan42 \| Host pool assignments** page, select **az140-21-hp1**, then select **Unassign** and, when prompted to confirm, in the **Unassign host pool** dialog box, select **Unassign**.
+
