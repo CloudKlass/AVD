@@ -55,7 +55,7 @@ The main tasks for this exercise are as follows:
 1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
 
   ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Start-AzVM
   ```
 
 
@@ -76,7 +76,7 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Resource group|**az140-21e-RG**|
+    |Resource group|**az140-21-RG**|
     |Name prefix|**sh1**|
     |Virtual machine location|The name of the Azure region into which you deployed the first two session host VMs|
     |Availability options|**No infrastructure redundancy required**|
@@ -87,7 +87,7 @@ The main tasks for this exercise are as follows:
     |OS disk type|**Standard SSD**|
     |OS disk size|**Default size (128GB)**|
     |Boot Diagnostics|**Enable with managed storage account (recommended)**|
-    |Virtual network|**az140-vnet11e**|
+    |Virtual network|**az140-vnet11**|
     |Subnet|**hp1-Subnet**|
     |Network security group|**Basic**|
     |Public inbound ports|**No**|
@@ -204,5 +204,6 @@ The main tasks for this exercise are as follows:
 > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
 
    ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
    ```
+
