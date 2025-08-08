@@ -48,7 +48,7 @@ The main tasks for this exercise are as follows:
 1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
 
   ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Start-AzVM
   ```
 
 #### Task 1: Adjust RDP properties of the Azure Virtual Desktop host pool
@@ -142,5 +142,6 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
 
    ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
    ```
+
