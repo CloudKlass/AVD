@@ -78,7 +78,7 @@ The main tasks for this exercise are as follows:
 1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
 
   ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Start-AzVM
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Start-AzVM
   ```
 
 
@@ -86,9 +86,9 @@ The main tasks for this exercise are as follows:
 
 > **Note**: You could use an existing subnet of an Azure virtual network to implement private endpoints in the lab scenario, but it is a common practice to use a dedicated subnet for this purpose.
 
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** page, select **az140-vnet11e**.
-1. On the **az140-vnet11e** page, in the **Settings** section of the vertical navigation menu, select **Subnets**.
-1. On the **az140-vnet11e \| Subnets** page, select **+ Subnet**.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** page, select **az140-vnet11**.
+1. On the **az140-vnet11** page, in the **Settings** section of the vertical navigation menu, select **Subnets**.
+1. On the **az140-vnet11 \| Subnets** page, select **+ Subnet**.
 1. In the **Add a subnet** pane, specify the following settings and select **Add** (leave other settings with their default values):
 
     |Setting|Value|
@@ -107,7 +107,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
     |Name|**az140-11-pehp1**|
     |Network Interface Name|**az140-11-pehp1-nic**|
     |Region|The name of the Azure region where you deployed your Azure Virtual Desktop environment|
@@ -122,7 +122,7 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Virtual network|**az140-vnet11e (az140-11e-RG)**|
+    |Virtual network|**az140-vnet11 (az140-11-RG)**|
     |Subnet|**pe-Subnet**|
     |Network policy for private endpoints|**Disabled**|
     |Private IP configuration|**Dynamically allocate IP address**|
@@ -133,7 +133,7 @@ The main tasks for this exercise are as follows:
     |---|---|
     |Integrate with private DNS zone|**Yes**|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
 
     > **Note**: This step will result in creation of a private DNS zone named **privatelink.wvd.microsoft.com**.
 
@@ -155,7 +155,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
     |Name|**az140-11-pefeeddwnld**|
     |Network Interface Name|**az140-11-pefeeddwnld-nic**|
     |Region|The name of the Azure region where you deployed your Azure Virtual Desktop environment|
@@ -170,7 +170,7 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Virtual network|**az140-vnet11e (az140-11e-RG)**|
+    |Virtual network|**az140-vnet11 (az140-11-RG)**|
     |Subnet|**pe-Subnet**|
     |Network policy for private endpoints|**Disabled**|
     |Private IP configuration|**Dynamically allocate IP address**|
@@ -181,7 +181,7 @@ The main tasks for this exercise are as follows:
     |---|---|
     |Integrate with private DNS zone|**Yes**|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
 
     > **Note**: This step will leverage the private DNS zone named **privatelink.wvd.microsoft.com** you created in the previous task.
 
@@ -203,7 +203,7 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
     |Name|**az140-11-pefeeddisc**|
     |Network Interface Name|**az140-11-pefeeddisc-nic**|
     |Region|The name of the Azure region where you deployed your Azure Virtual Desktop environment|
@@ -218,7 +218,7 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Virtual network|**az140-vnet11e (az140-11e-RG)**|
+    |Virtual network|**az140-vnet11 (az140-11-RG)**|
     |Subnet|**pe-Subnet**|
     |Network policy for private endpoints|**Disabled**|
     |Private IP configuration|**Dynamically allocate IP address**|
@@ -229,7 +229,7 @@ The main tasks for this exercise are as follows:
     |---|---|
     |Integrate with private DNS zone|**Yes**|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|**az140-11e-RG**|
+    |Resource group|**az140-11-RG**|
 
     > **Note**: This step will will result in creation of a private DNS zone named **privatelink-global.wvd.microsoft.com**.
 
@@ -262,9 +262,9 @@ The main tasks for this exercise are as follows:
 
     > **Note**: To validate the private endpoint functionality, an RDP client needs to be connected to a network that has private connectivity to the Azure virtual network containing subnet hosting the private endpoints you created earlier in this lab. To simulate this scenario, you will create another subnet in the same virtual network used to create private endpoints and deploy an Azure VM running Windows 11 into that subnet.
 
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** page, select **az140-vnet11e**.
-1. On the **az140-vnet11e** page, in the **Settings** section of the vertical navigation menu, select **Subnets**.
-1. On the **az140-vnet11e \| Subnets** page, select **+ Subnet**.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** page, select **az140-vnet11**.
+1. On the **az140-vnet11** page, in the **Settings** section of the vertical navigation menu, select **Subnets**.
+1. On the **az140-vnet11 \| Subnets** page, select **+ Subnet**.
 1. In the **Add a subnet** pane, specify the following settings and select **Add** (leave other settings with their default values):
 
     |Setting|Value|
@@ -279,8 +279,8 @@ The main tasks for this exercise are as follows:
     |Setting|Value|
     |---|---|
     |Subscription|The name of the Azure subscription you are using in this lab|
-    |Resource group|The name of a new resource group **az140-111e-RG**|
-    |Virtual machine name|**az140-111e-vm0**|
+    |Resource group|The name of a new resource group **az140-111-RG**|
+    |Virtual machine name|**az140-111-vm0**|
     |Region|The name of the Azure region where you deployed your Azure Virtual Desktop environment|
     |Availability options|**No infrastructure redundancy required**|
     |Security type|**Standard**|
@@ -298,9 +298,9 @@ The main tasks for this exercise are as follows:
 
     |Setting|Value|
     |---|---|
-    |Virtual network|**az140-vnet11e**|
+    |Virtual network|**az140-vnet11**|
     |Subnet|**client-Subnet**|
-    |Public IP|**(new) az140-111e-vm0-ip**|
+    |Public IP|**(new) az140-111-vm0-ip**|
     |NIC network security group|**Advanced**|
 
 1. On the **Networking** tab of the **Create a virtual machine** page, next to the **Configure network security group** drop-down list, select **Create new**.
@@ -337,18 +337,18 @@ The main tasks for this exercise are as follows:
 
     > **Note**: Wait for the deployment to complete. The deployment might take about 5 minutes.
 
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, on the **Virtual machines** page, select **az140-111e-vm0**.
-1. On the **az140-111e-vm0** page, select **Connect** and, in the drop-down menu, select **Connect**.
-1. On the **az140-111e-vm0 \| Connect** page, in the **Most common** section, select **Download RDP file**.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, on the **Virtual machines** page, select **az140-111-vm0**.
+1. On the **az140-111-vm0** page, select **Connect** and, in the drop-down menu, select **Connect**.
+1. On the **az140-111-vm0 \| Connect** page, in the **Most common** section, select **Download RDP file**.
 1. In the **Download** pop-up window, select **Keep** and then select **Open file**.
 1. When prompted, select **Connect** and then, in the **Windows Security** dialog box, enter the user name and password you specified when deploying the Azure VM.
 1. When prompted for confirmation, select **Connect** again.
-1. Within the Remote Desktop session to **az140-111e-vm0**, choose and accept your preferred privacy settings.
-1. Within the Remote Desktop session to **az140-111e-vm0**, start Microsoft Edge, navigate to the [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi) page, scroll down to the section **Download and install the Remote Desktop client (MSI)**, and select the [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2139369) link. 
+1. Within the Remote Desktop session to **az140-111-vm0**, choose and accept your preferred privacy settings.
+1. Within the Remote Desktop session to **az140-111-vm0**, start Microsoft Edge, navigate to the [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi) page, scroll down to the section **Download and install the Remote Desktop client (MSI)**, and select the [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2139369) link. 
 1. Open File Explorer, navigate to the **Downloads** folder, and launch the installation of the newly downloaded MSI file. 
 1. When prompted, accept the terms of the licensing agreement and choose the option to **Install for all users of this machine**. If prompted, accept the User Account Control prompt to proceed with the installation. 
 1. Once the installation completes, ensure that the **Launch Remote Desktop when setup exits** checkbox is selected and select **Finish** to start the Microsoft Remote Desktop client.
-1. Within the Remote Desktop session to **az140-111e-vm0**, in the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of the `User2` Entra ID.
+1. Within the Remote Desktop session to **az140-111-vm0**, in the **Remote Desktop** client window, select **Subscribe** and, when prompted, sign in with the credentials of the `User2` Entra ID.
 
    > **Note**: Select the user account which is the member of the Entra group with the **AVD-RemoteApp** prefix.
 
@@ -357,7 +357,7 @@ The main tasks for this exercise are as follows:
 1. When prompted to sign in, in the **Windows Security** dialog box, enter the password of the same Microsoft Entra user account you used to connect to the target Azure Virtual Desktop environment.
 1. Verify that a **Command Prompt** window appears shortly afterwards. 
 1. At the Command Prompt, type **logoff** and press the **Enter** key to log off from the current Remote App session.
-1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, in **Computer infrastructure**  Virtual machines select "az140-111e-vm0", from the top menu select stop.
+1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Virtual machines**, in **Computer infrastructure**  Virtual machines select "az140-111-vm0", from the top menu select stop.
 
    > **Note**: Optionally, you might consider attempting to subscribe to the feed and connect to The Azure Virtual Desktop workspace from the lab computer to validate that this connection will fail. 
 
@@ -374,6 +374,7 @@ The main tasks for this exercise are as follows:
 > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
 
    ```powershell
-    Get-AzVM -ResourceGroup 'az140-21e-RG' | Stop-AzVM -NoWait -Force
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
    ```
+
 
