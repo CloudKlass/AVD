@@ -110,7 +110,7 @@ The main tasks for this exercise are as follows:
 
 1. Select Review + Create and Create
 
-> **Note**: Wait for the registration to complete. This might take a couple of minutes.
+> **Note**:  Do not wait for the provisioning process to complete. This typically takes less than 1 minute..
    
 #### Task 2: Deploy an Azure Virtual Desktop host pool
 
