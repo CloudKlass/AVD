@@ -111,7 +111,7 @@ in the Select specific subnets select hp1-Subnet
 1. Select Review + Create and Create
 
 2. > **Note**: Wait for the registration to complete. This might take a couple of minutes.
-   > 
+   
 #### Task 2: Deploy an Azure Virtual Desktop host pool
 
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Host pools** and, on the **Azure Virtual Desktop \| Host pools** page, select **+ Create**. 
