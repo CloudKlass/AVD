@@ -110,7 +110,7 @@ The main tasks for this exercise are as follows:
 
 1. Select Review + Create and Create
 
-2. > **Note**: Wait for the registration to complete. This might take a couple of minutes.
+> **Note**: Wait for the registration to complete. This might take a couple of minutes.
    
 #### Task 2: Deploy an Azure Virtual Desktop host pool
 
