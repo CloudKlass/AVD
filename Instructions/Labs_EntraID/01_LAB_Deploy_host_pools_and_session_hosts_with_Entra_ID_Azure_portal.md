@@ -103,6 +103,7 @@ The main tasks for this exercise are as follows:
   |Region|The name of the Azure region where you want to deploy the Azure Virtual Desktop environment|
 
 1. On the Outbound IP tab, select + Add public IP addresses or prefixes
+
 1. On the Manage public IP addresses and prefixes page, select Create a public IP address, accept the default name and select OK then save
 
 1. On the Networking tab from the Virtual Network drop down menu select az140-vnet11, in the Select specific subnets select hp1-Subnet
