@@ -90,8 +90,28 @@ The main tasks for this exercise are as follows:
 1. Back on the **IP addresses** tab, select **Review + create** and then, on the **Review + create** tab, select **Create**.
 
     > **Note**: Do not wait for the provisioning process to complete. This typically takes less than 1 minute.
+    > 
+1. In the web browser displaying the Azure portal, search for and select NAT gateways, on the Nat gateways page, select +Create
 
+1. On the Basics tab of the Create virtual network page, specify the following settings and select Next:
 
+  |Setting|Value|
+  |---|---|
+  |Subscription|The name of the Azure subscription you are using in this lab|
+  |Resource group| az140-11-RG|
+  |NAT gateway name|az140-natgw|
+  |Region|The name of the Azure region where you want to deploy the Azure Virtual Desktop environment|
+
+1.On the Outbound IP tab, select + Add public IP addresses or prefixes
+On the Manage public IP addresses and prefixes page, select Create a public IP address, accept the default name and select OK then save
+
+1. On the Networking tab from the Virtual Network drop down menu select az140-vnet11,
+in the Select specific subnets select hp1-Subnet
+
+1. Select Review + Create and Create
+
+2. > **Note**: Wait for the registration to complete. This might take a couple of minutes.
+   > 
 #### Task 2: Deploy an Azure Virtual Desktop host pool
 
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Host pools** and, on the **Azure Virtual Desktop \| Host pools** page, select **+ Create**. 
