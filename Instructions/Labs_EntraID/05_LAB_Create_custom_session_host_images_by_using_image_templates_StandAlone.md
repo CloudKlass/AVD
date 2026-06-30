@@ -114,7 +114,7 @@ The main tasks for this exercise are as follows:
     ```powershell
     $jsonContent = @"
     {
-    "Name": "Desktop Virtualization Image Creator (xxxxxxxxx)",
+    "Name": "Desktop Virtualization Image Creator",
     "IsCustom": true,
     "Description": "Create custom image templates for Azure Virtual Desktop images.",
     "Permissions": [
