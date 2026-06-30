@@ -117,15 +117,15 @@ The main tasks for this exercise are as follows:
       "Name": "Desktop Virtualization Image Creator",
       "IsCustom": true,
       "Description": "Create custom image templates for Azure Virtual Desktop images.",
-      "Permissions":[
+      "Permissions": [
       { 
       "Actions": [
         "Microsoft.Compute/galleries/read",
         "Microsoft.Compute/galleries/images/read",
         "Microsoft.Compute/galleries/images/versions/read",
         "Microsoft.Compute/galleries/images/versions/write",
-        "Microsoft.Compute/images/write",
         "Microsoft.Compute/images/read",
+        "Microsoft.Compute/images/write",
         "Microsoft.Compute/images/delete"
       ],
       "NotActions": [],
