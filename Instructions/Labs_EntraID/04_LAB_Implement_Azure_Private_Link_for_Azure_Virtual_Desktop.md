@@ -258,7 +258,7 @@ The main tasks for this exercise are as follows:
 1. On the **az140-21-ws1 \| Networking** page, on the **Public access** tab, select the option **Disable public access and use private access**, and then select **Save**.
 1. From the lab computer, in the web browser displaying the Azure portal, search for and select **Azure Virtual Desktop**, on the **Azure Virtual Desktop** page, in the **Manage** section of the vertical navigation menu, select **Host pools** and, on the **Azure Virtual Desktop \| Host pools** page, select **az140-21-hp1**.
 1. On the **az140-21-hp1** page, in the vertical navigation menu, in the **Settings** section, select **Networking**.
-1. On the **az140-21-hp1 \| Networking** page, on the **RDP shortpath** tab, select the option
+1. On the **az140-21-hp1 \| Networking** page, on the **RDP shortpath** tab, select the option.
    
  |Setting|Value|
  |---|---|
@@ -268,9 +268,9 @@ The main tasks for this exercise are as follows:
  
  and then select **Save**.
 
-1. On the **az140-21-hp1 \| Networking** page, on the **Public access** tab,
+1. On the **az140-21-hp1 \| Networking** page, on the **Public access** tab.
 1. **Disable public access and use private access** and select the tick box for **Allow direct UDP network path with Private Link**
-   and then select **Save**
+   and then select **Save**.
    
     > **Note**: To validate the private endpoint functionality, an RDP client needs to be connected to a network that has private connectivity to the Azure virtual network containing subnet hosting the private endpoints you created earlier in this lab. To simulate this scenario, you will create another subnet in the same virtual network used to create private endpoints and deploy an Azure VM running Windows 11 into that subnet.
 
