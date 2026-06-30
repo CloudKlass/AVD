@@ -260,13 +260,13 @@ The main tasks for this exercise are as follows:
 1. On the **az140-21-hp1** page, in the vertical navigation menu, in the **Settings** section, select **Networking**.
 1. On the **az140-21-hp1 \| Networking** page, on the **RDP shortpath** tab, select the option.
    
- |Setting|Value|
- |---|---|
- |RDP shortpath for managed networks (STUN)|Disabled|
- |RDP shortpath for public networks (via STUN)|Disabled|
- |RDP shortpath for public networks (via TURN/Relay)|Disabled|
+   |Setting|Value|
+   |---|---|
+   |RDP shortpath for managed networks (STUN)|Disabled|
+   |RDP shortpath for public networks (via STUN)|Disabled|
+   |RDP shortpath for public networks (via TURN/Relay)|Disabled|
  
- and then select **Save**.
+   and then select **Save**.
 
 1. On the **az140-21-hp1 \| Networking** page, on the **Public access** tab.
 1. **Disable public access and use private access** and select the tick box for **Allow direct UDP network path with Private Link**
