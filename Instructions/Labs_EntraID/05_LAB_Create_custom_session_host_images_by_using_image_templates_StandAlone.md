@@ -112,33 +112,33 @@ The main tasks for this exercise are as follows:
 1. Run the following command to create the role definition of the new custom role including its assignable scope value and store it in the **$jsonContent** variable :
 
     ```powershell
-   $jsonContent = @"
+    $jsonContent = @"
     {
-      "Name": "Desktop Virtualization Image Creator",
-      "IsCustom": true,
-      "Description": "Create custom image templates for Azure Virtual Desktop images.",
-      "Permissions": [
-      { 
-      "Actions": [
-        "Microsoft.Compute/galleries/read",
-        "Microsoft.Compute/galleries/images/read",
-        "Microsoft.Compute/galleries/images/versions/read",
-        "Microsoft.Compute/galleries/images/versions/write",
-        "Microsoft.Compute/images/read",
-        "Microsoft.Compute/images/write",
-        "Microsoft.Compute/images/delete"
-      ],
-      "NotActions": [],
-      "DataActions": [],
-      "NotDataActions": [],
-      }
-      ]
-      "AssignableScopes": [
-        "/subscriptions/$subscriptionId",
-        "/subscriptions/$subscriptionId/resourceGroups/az140-15b-RG"
-      ]
+    "Name": "Desktop Virtualization Image Creator (xxxxxxxxx)",
+    "IsCustom": true,
+    "Description": "Create custom image templates for Azure Virtual Desktop images.",
+    "Permissions": [
+    {
+    "Actions": [
+    "Microsoft.Compute/galleries/read",
+    "Microsoft.Compute/galleries/images/read",
+    "Microsoft.Compute/galleries/images/versions/read",
+    "Microsoft.Compute/galleries/images/versions/write",
+    "Microsoft.Compute/images/read",
+    "Microsoft.Compute/images/write",
+    "Microsoft.Compute/images/delete"
+    ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": []
     }
-   "@
+    ],
+    "AssignableScopes": [
+    "/subscriptions/$subscriptionId",
+    "/subscriptions/$subscriptionId/resourceGroups/az140-15b-RG"
+    ]
+    }
+    "@
     ```
 >**Note** If this command does not run correctly, paste the content into notepad and remove any white spaces before the first and last line , then repaste in the cloudshell.
 
