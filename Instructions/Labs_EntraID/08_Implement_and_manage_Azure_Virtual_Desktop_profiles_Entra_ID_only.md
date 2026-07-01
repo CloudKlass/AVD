@@ -29,7 +29,7 @@ You have a Microsoft Azure subscription. You need to setup a file share and FXLo
 
 ## Lab files
 
-- ???.ps1
+- None
 
 ## Instructions
 
