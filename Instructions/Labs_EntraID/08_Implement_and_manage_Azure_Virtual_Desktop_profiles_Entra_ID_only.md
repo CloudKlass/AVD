@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only)'
+    title: 'Implement and manage Azure Virtual Desktop profiles (Entra ID only)'
     module: 'Module: Custom File share lab'
 ---
 
