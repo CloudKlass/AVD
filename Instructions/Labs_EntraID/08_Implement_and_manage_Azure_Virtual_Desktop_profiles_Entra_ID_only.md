@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Lab - Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only). This is a QA lab and may be removed or replaced when this course is updated
+# Lab - Implement and manage Azure Virtual Desktop profiles (Entra ID only). This is a QA lab and may be removed or replaced when this course is updated
 # Student lab manual
 
 ## Lab dependencies
