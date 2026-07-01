@@ -173,3 +173,8 @@ Not configured**
 
 1. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
     
+> **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
+
+   ```powershell
+    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
+   ```
