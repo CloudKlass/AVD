@@ -169,9 +169,11 @@ Not configured**
 
 ##### Task 6: Test the file share.
 
-1. Naviagte to the Virtual Destop app on the lab pc, launch the remote desktop session and connect as user1.
+1. You have already connected to the AVD environment in a previous lab, naviagte to the Virtual Destop app on the lab pc, launch the remote desktop session and connect as user1, 
 
 1. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
+
+> **Note** You could launch the Virtual Desktop app logged in as User2 to test that a new profile is created for that user. 
     
 > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
 
