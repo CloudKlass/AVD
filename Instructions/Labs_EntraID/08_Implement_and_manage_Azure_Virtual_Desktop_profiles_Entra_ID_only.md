@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Lab - Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only). This is a QA lab and my be removed or replaced when this course is updated
+# Lab - Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only). This is a QA lab and may be removed or replaced when this course is updated
 # Student lab manual
 
 ## Lab dependencies
@@ -19,13 +19,13 @@ lab:
 
 ## Lab scenario
 
-You need to create a file share in Azure to use with FXLogix for users profiles .
+You need to create a file share in Azure to use with FXLogix for user profiles .
 
 ## Objectives
   
 After completing this lab:
 
-You have a Microsoft Azure subscription. You need to setup a file share and FXLogix to use with users profile.
+You have a Microsoft Azure subscription. You need to setup a file share and FXLogix to use with user profile.
 
 ## Lab files
 
@@ -73,12 +73,12 @@ The main tasks for this exercise are as follows:
 
 1. On the Basics tab of the Create storage account blade, select Review + Create, wait for the validation process to complete, and then select Create.
 
-1. Once the storage account is deploy click go to resource.
+1. Once the storage account is deployed click go to resource.
 
 1. On the overview page of the storage account under the File Service section next to Identity-based access select the link that say **
 Not configured**
 
-1. On the File share page select the lnk that says **Not configured** next to Identity-based access.
+1. On the File share page select the link that says **Not configured** next to Identity-based access.
 
 1. On the Identity based access page click setup in the Microsoft Kerberos Entra section.
 
@@ -104,7 +104,7 @@ Not configured**
 
 1. Under the Mange section select API permissions, click the Grant admin consent link and then select yes from the pop up window.
 
-1. Navigate to Manifest under the Mange section, find the item '"tags": [],' normally line 28. Enter **"kdc_enable_cloud_group_sids"** inculding the quote marks between the brackets, then save the file.
+1. Navigate to Manifest under the Mange section, find the item '"tags": [],' normally line 28. Enter **"kdc_enable_cloud_group_sids"** including the quote marks between the brackets, then save the file.
 
 #### Task 4: Preparing the AVD Hosts part 1.
 
@@ -123,7 +123,7 @@ Not configured**
 
 1. From the list select the storage account you created earlier, under the Data storage section select File share then select the share fxlogix.
 
-1. On the fxlogix page select browse, then select the + Add directory link, enterthe name Profiles in the box and press ok.
+1. On the fxlogix page select browse, then select the + Add directory link, enter the name Profiles in the box and press ok.
 
 1. On the fxlogix page select the Manage access link, on the Manage access page select + Add Security Id, from the pop up tab select Creator owner and then save. In the display pane press the edit pencil next to the Creator owner, set the following permissions then press done.
 
@@ -155,7 +155,7 @@ Not configured**
 1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter the following command
 
   ```powershell
-    r$profilePath = "\\[Replace with you storage account name].core.windows.net\fxlogix\Profiles" 
+    $profilePath = "\\[Replace with your storage account name].core.windows.net\fxlogix\Profiles" 
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "VHDLocations" -Value $profilePath
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "Enabled" -Value 1 -Type DWord
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -Type DWord
@@ -169,7 +169,7 @@ Not configured**
 
 ##### Task 6: Test the file share.
 
-1. You have already connected to the AVD environment in a previous lab, naviagte to the Virtual Destop app on the lab pc, launch the remote desktop session and connect as user1, 
+1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1, 
 
 1. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
 
