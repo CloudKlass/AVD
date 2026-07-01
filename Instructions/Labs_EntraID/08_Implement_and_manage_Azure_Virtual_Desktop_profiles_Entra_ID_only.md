@@ -125,7 +125,7 @@ Not configured**
 
 1. On the fxlogix page select browse, then select the + Add directory link, enter the name Profiles in the box and press ok.
 
-1. On the fxlogix page select the Manage access link, on the Manage access page select + Add Security Id, from the pop up tab select Creator owner and then save. In the display pane press the edit pencil next to the Creator owner, set the following permissions then press done.
+1. On the fxlogix page select the elipse next to the Profiles folder and then select Manage access,on the Manage access page leave the Creator owner and then remove all the other users and groups. In the display pane press the edit pencil next to the Creator owner, set the following permissions then press done.
 
    |Setting|Value|
    |---|---|
