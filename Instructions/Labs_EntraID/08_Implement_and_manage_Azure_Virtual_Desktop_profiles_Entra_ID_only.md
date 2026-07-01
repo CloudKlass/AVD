@@ -95,4 +95,56 @@ Not configured**
 
 1.  Select Review + Create, wait for the validation process to complete, and then select Create.
 
+####Task 3: Configure Microsoft Entra ID App Registration.
 
+1. In the Azure portal, search for and select Microsoft Entra ID
+
+1. In Microsoft Entra ID under the Mange setion select App registrations, on the App registration blade section All appilcations, From the list select the storage account you crated earlier.
+
+1. Under the Mange section select API permissions, click the Grant admin consent link and then select yes from the pop up window.
+
+1. Navigate to Manifest under the Mange section, find the item '"tags": [],' normally line 28. Enter **"kdc_enable_cloud_group_sids"** inculding the quote marks between the brackets, then save the file.
+
+####Task 4: Preparing the AVD Hosts part 1.
+
+1. In the Azure portal, search for and select Virtual Machine.
+
+1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter the following command
+
+  ```powershell
+    reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters /v CloudKerberosTicketRetrievalEnabled /t REG_DWORD /d 1
+  ```
+1. Repeat this for the remaining host VMs
+
+#### Task 4: Complete the setup on the file share to enable user permissions.
+
+1. In the Azure portal, search for and select Storage accounts.
+
+1. From the list select the storage account you created earlier, under the Data storage section select File share then select the share fxlogix.
+
+1. On the fxlogix page select browse, then select the + Add directory link, enterthe name Profiles in the box and press ok.
+
+1. On the fxlogix page select the Manage access link, on the Manage access page select + Add Security Id, from the pop up tab select Creator owner and then save. In the display pane press the edit pencil next to the Creator owner, set the following permissions then press done.
+
+   |Setting|Value|
+   |---|---|
+   |Applies to|Applies to Subfolders and Subfiles|
+   |Permissions|Allow Modify|
+
+   1. On the Manage access page select Add Entra User/Group, from the list select AVD-DAG and AVD-RemoteApp the press select, back on the Manage access page apply the follow permission using the edit button for each group. When completed press save.
+  
+      AVD-DAG
+  
+      |Setting|Value
+      |---|---|
+      |Applies to|Applies to Subfolders and Subfiles|
+      |Permissions|Allow Full Control|
+
+      AVD-RemoreApp
+
+      |Setting|Value|
+      |---|---|
+      |Applies to||Applies tothis folder|
+      |Permissions|Allow Modify|
+
+   
