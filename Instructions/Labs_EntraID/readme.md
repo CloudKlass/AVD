@@ -9,5 +9,5 @@ This is a separate set of labs that rely exclusively on Entra ID for authenticat
    - 05_LAB_Create_custom_session_host_images_by_using_image_templates_StandAlone.md
    - 06_LAB_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.md
    - 07_LAB_Implement_autoscaling_of_session_hosts.md
-   - 08_Implement_and_manage_Azure_Virtual_Desktop_profiles_Entra_ID_only.md
+   - Implement_and_manage_Azure_Virtual_Desktop_profiles_Entra_ID_only.md
  
