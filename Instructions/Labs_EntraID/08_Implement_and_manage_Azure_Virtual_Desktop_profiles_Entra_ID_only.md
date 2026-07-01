@@ -96,7 +96,7 @@ Not configured**
 
 1.  Select Review + Create, wait for the validation process to complete, and then select Create.
 
-####Task 3: Configure Microsoft Entra ID App Registration.
+#### Task 3: Configure Microsoft Entra ID App Registration.
 
 1. In the Azure portal, search for and select Microsoft Entra ID
 
@@ -106,7 +106,7 @@ Not configured**
 
 1. Navigate to Manifest under the Mange section, find the item '"tags": [],' normally line 28. Enter **"kdc_enable_cloud_group_sids"** inculding the quote marks between the brackets, then save the file.
 
-####Task 4: Preparing the AVD Hosts part 1.
+#### Task 4: Preparing the AVD Hosts part 1.
 
 1. In the Azure portal, search for and select Virtual Machine.
 
@@ -148,7 +148,7 @@ Not configured**
       |Applies to||Applies tothis folder|
       |Permissions|Allow Modify|
 
-   ####Task 5: Preparing the AVD Hosts part 2.
+ #### Task 5: Preparing the AVD Hosts part 2.
 
    1.  In the Azure portal, search for and select Virtual Machine.
 
@@ -167,7 +167,7 @@ Not configured**
 
 > **Note: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
 
-#####Task 6: Test the file share.
+##### Task 6: Test the file share.
 
 1. Naviagte to the Virtual Destop app on the lab pc, launch the remote desktop session and connect as user1.
 
