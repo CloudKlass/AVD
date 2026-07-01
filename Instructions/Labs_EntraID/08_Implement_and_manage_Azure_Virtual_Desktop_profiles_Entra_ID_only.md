@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# Lab - Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only).
+# Lab - Lab: Implement and manage Azure Virtual Desktop profiles (Entra ID only). This is a QA lab and my be removed or replaced when this course is updated
 # Student lab manual
 
 ## Lab dependencies
@@ -15,7 +15,7 @@ lab:
 
 ## Estimated Time
 
-? minutes
+45 minutes
 
 ## Lab scenario
 
@@ -148,4 +148,28 @@ Not configured**
       |Applies to||Applies tothis folder|
       |Permissions|Allow Modify|
 
-   
+   ####Task 5: Preparing the AVD Hosts part 2.
+
+   1.  In the Azure portal, search for and select Virtual Machine.
+
+1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter the following command
+
+  ```powershell
+    r$profilePath = "\\[Replace with you storage account name].core.windows.net\fxlogix\Profiles" 
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "VHDLocations" -Value $profilePath
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "Enabled" -Value 1 -Type DWord
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -Type DWord
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "SizeInMBs" -Value 30000 -Type DWord
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "FlipFlopProfileDirectoryName" -Value 1 -Type DWord
+
+  ```
+1. Repeat this for the remaining host VMs
+
+> **Note: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
+
+#####Task 6: Test the file share.
+
+1. Naviagte to the Virtual Destop app on the lab pc, launch the remote desktop session and connect as user1.
+
+1. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
+    
