@@ -102,7 +102,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 
    > **Note**: This will automatically terminate the Remote Desktop session. 
 
-1. If needed start the Windows App agian from the start menu, on the top menu bar click user1 and on the submenu sign in with another account. Sign in as user2.
+1. If needed start the Windows App again from the start menu, on the top menu bar click user1 and on the submenu sign in with another account. Sign in as user2.
 2. 
 1. In the **Windows App** select Apps from the menu on the right.
 
