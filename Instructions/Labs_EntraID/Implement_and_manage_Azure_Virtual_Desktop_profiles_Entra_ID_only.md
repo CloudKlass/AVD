@@ -99,7 +99,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, search for and select Microsoft Entra ID
 
-1. In Microsoft Entra ID under the Mange setion select App registrations, on the App registration blade section All appilcations, From the list select the storage account you crated earlier.
+1. In Microsoft Entra ID under the Mange setion select App registrations, on the App registration blade section All appilcations, From the list select the storage account you created earlier.
 
 1. Under the Mange section select API permissions, click the Grant admin consent link and then select yes from the pop up window.
 
