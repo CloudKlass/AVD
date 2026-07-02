@@ -152,7 +152,7 @@ The main tasks for this exercise are as follows:
 
    1.  In the Azure portal, search for and select Virtual Machine.
 
-1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command
+1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command.Remove [Replace with your storage account name] and replace with your storage account name.
 
   ```powershell
     $profilePath = "\\[Replace with your storage account name].core.windows.net\fxlogix\Profiles" 
