@@ -92,7 +92,7 @@ Since none of these criteria apply to the lab computer, it is necessary to add `
 
 #### Task 3: Connect to a Azure Virtual Desktop workspace
 
-1. On the lab computer, switch to the **Windows App** , click the SessionDesktop icon to launch the session, if prompted supply user1 password and sat yes to any allow remote desktop connection windows. .
+1. On the lab computer, switch to the **Windows App** , click the SessionDesktop icon to launch the session, if prompted supply user1 password and say yes to any allow remote desktop connection windows. .
 
    > **Note**: Select the user account which is the member of the Entra group with the **AVD-DAG** prefix.
 
