@@ -83,7 +83,7 @@ The main tasks for this exercise are as follows:
 
 1. Select the tick box on the tab, leave the other section blank and press save.
 
-1. Back on the Identity based access page under the Set share-level permissions section select Set share-level permissions, in the drop down menu select **Set share-level permissions** then press save.
+1. Back on the Identity based access page under the Set share-level permissions section select **Enable permissions for all authenticated users and groups** Set share-level permissions, in the drop down menu to **Storage File Data SMB Share Contributor** then press save.
 
 1. Navigate back to the file share page.
 
