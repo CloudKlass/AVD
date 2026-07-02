@@ -165,7 +165,7 @@ The main tasks for this exercise are as follows:
   ```
 1. Repeat this for the remaining host VMs
 
-> **Note: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
+> **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
 
 ##### Task 6: Test the file share.
 
