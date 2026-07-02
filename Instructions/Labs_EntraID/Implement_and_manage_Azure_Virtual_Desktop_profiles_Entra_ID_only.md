@@ -117,7 +117,7 @@ The main tasks for this exercise are as follows:
   ```
 1. Repeat this for the remaining host VMs
 
-#### Task 4: Complete the setup on the file share to enable user permissions.
+#### Task 5: Complete the setup on the file share to enable user permissions.
 
 1. In the Azure portal, search for and select Storage accounts.
 
@@ -148,7 +148,7 @@ The main tasks for this exercise are as follows:
       |Applies to|Applies to this folder|
       |Permissions|Allow Modify|
 
-    #### Task 5: Preparing the AVD Hosts part 2.
+    #### Task 6: Preparing the AVD Hosts part 2.
 
    1.  In the Azure portal, search for and select Virtual Machine.
 
@@ -164,10 +164,10 @@ The main tasks for this exercise are as follows:
   ```
    1. Repeat this for the remaining host VMs
 
-  > **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
+   > **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
 
 
-  #### Task 6: Test the file share.
+  #### Task 7: Test the file share.
 
     1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1. 
 
