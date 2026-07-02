@@ -75,8 +75,7 @@ The main tasks for this exercise are as follows:
 
 1. Once the storage account is deployed click go to resource.
 
-1. On the overview page of the storage account under the File Service section next to Identity-based access select the link that say **
-Not configured**
+1. On the overview page of the storage account under the File Service section next to Identity-based access select the link that say **Not configured**
 
 1. On the File share page select the link that says **Not configured** next to Identity-based access.
 
