@@ -167,7 +167,7 @@ The main tasks for this exercise are as follows:
 
    > **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
 
-  #### Task 7: Test the file share.
+   #### Task 7: Test the file share.
 
    1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1. 
 
