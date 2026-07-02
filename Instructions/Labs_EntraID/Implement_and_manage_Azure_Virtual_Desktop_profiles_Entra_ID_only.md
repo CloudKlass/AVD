@@ -130,7 +130,7 @@ The main tasks for this exercise are as follows:
 
    |Setting|Value|
    |---|---|
-   |Applies to|Applies to Subfolders and Subfiles|
+   |Applies to|Applies to subfolders and subfiles|
    |Permissions|Allow Modify|
 
  5. On the Manage access page select Add Entra User/Group, from the list select AVD-DAG and AVD-RemoteApp the press select, back on the Manage access page apply the follow permission using the edit button for each group. When completed press save.
@@ -139,7 +139,7 @@ The main tasks for this exercise are as follows:
   
       |Setting|Value
       |---|---|
-      |Applies to|Applies to Subfolders and Subfiles|
+      |Applies to|Applies to this folder subfolders and subfiles|
       |Permissions|Allow Full Control|
 
       AVD-RemoteApp
