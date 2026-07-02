@@ -141,7 +141,7 @@ The main tasks for this exercise are as follows:
       |Applies to|Applies to Subfolders and Subfiles|
       |Permissions|Allow Full Control|
 
-      AVD-RemoreApp
+      AVD-RemoteApp
 
       |Setting|Value|
       |---|---|
