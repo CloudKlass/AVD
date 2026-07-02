@@ -104,6 +104,7 @@ The main tasks for this exercise are as follows:
 1. Under the Mange section select API permissions, click the Grant admin consent link and then select yes from the pop up window.
 
 1. Navigate to Manifest under the Mange section, find the item '"tags": [],' normally line 28. Enter **"kdc_enable_cloud_group_sids"** including the quote marks between the brackets, then save the file.
+
 > **Note**: You will need to type the code in it will not accept cut and paste
 
 #### Task 4: Preparing the AVD Hosts part 1.
