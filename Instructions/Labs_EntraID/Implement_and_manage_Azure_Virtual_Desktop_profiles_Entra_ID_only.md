@@ -64,12 +64,12 @@ The main tasks for this exercise are as follows:
     |Settings|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|create a new resource group called az140-22-RG|
+    |Resource group|create a new resource group called **az140-22-RG**|
     |Storage account name|any globally unique name between 3 and 15 in length consisting of lower case letters and digits, starting with a letter|
     |Region|the name of an Azure region hosting the Azure Virtual Desktop lab environment|
     |Preferred storage type|Azure Blob Storage or Azure Data Lake Storage|
     |Redundancy|Geo-redundant storage (GRS)|
-    |Make read access to data available in the event of regional unavailability||enabled|
+    |Make read access to data available in the event of regional unavailability|enabled|
 
 1. On the Basics tab of the Create storage account blade, select Review + Create, wait for the validation process to complete, and then select Create.
 
