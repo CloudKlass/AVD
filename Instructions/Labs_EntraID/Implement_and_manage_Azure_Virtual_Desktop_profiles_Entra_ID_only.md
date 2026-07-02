@@ -137,7 +137,7 @@ The main tasks for this exercise are as follows:
   
       AVD-DAG
   
-      |Setting|Value
+      |Setting|Value|
       |---|---|
       |Applies to|Applies to this folder subfolders and subfiles|
       |Permissions|Allow Full Control|
