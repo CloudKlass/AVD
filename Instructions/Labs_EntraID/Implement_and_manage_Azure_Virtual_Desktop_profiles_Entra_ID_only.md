@@ -156,7 +156,7 @@ The main tasks for this exercise are as follows:
    2. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command. Remove [Replace with your storage account name] and replace with your storage account name.
 
   ```powershell
-    $profilePath = "\\[Replace with your storage account name].core.windows.net\fxlogix\Profiles" 
+    $profilePath = "\\[Replace with your storage account name].file.core.windows.net\fxlogix\Profiles" 
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "VHDLocations" -Value $profilePath
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "Enabled" -Value 1 -Type DWord
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -Type DWord
