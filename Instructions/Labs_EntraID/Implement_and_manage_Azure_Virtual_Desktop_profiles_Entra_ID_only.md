@@ -71,19 +71,19 @@ The main tasks for this exercise are as follows:
     |Redundancy|Geo-redundant storage (GRS)|
     |Make read access to data available in the event of regional unavailability|enabled|
 
-1. On the Basics tab of the Create storage account blade, select Review + Create, wait for the validation process to complete, and then select Create.
+ 1. On the Basics tab of the Create storage account blade, select Review + Create, wait for the validation process to complete, and then select Create.
 
-1. Once the storage account is deployed click go to resource.
+ 1. Once the storage account is deployed click go to resource.
 
-1. On the overview page of the storage account under the File Service section next to Identity-based access select the link that say **Not configured**
+ 1. On the overview page of the storage account under the File Service section next to Identity-based access select the link that say **Not configured**
 
-1. On the File share page select the link that says **Not configured** next to Identity-based access.
+ 1. On the File share page select the link that says **Not configured** next to Identity-based access.
 
-1. On the Identity based access page click setup in the Microsoft Kerberos Entra section.
+ 1. On the Identity based access page click setup in the Microsoft Kerberos Entra section.
 
-1. Select the tick box on the tab, leave the other section blank and press save.
+ 1. Select the tick box on the tab, leave the other section blank and press save.
 
-1. Back on the Identity based access page under the Set share-level permissions section select **Enable permissions for all authenticated users and groups** Set share-level permissions, in the drop down menu to **Storage File Data SMB Share Contributor** then press save.
+ 1. Back on the Identity based access page under the Set share-level permissions section select **Enable permissions for all authenticated users and groups** Set share-level permissions, in the drop down menu to **Storage File Data SMB Share Contributor** then press save.
 
 1. Navigate back to the file share page.
 
