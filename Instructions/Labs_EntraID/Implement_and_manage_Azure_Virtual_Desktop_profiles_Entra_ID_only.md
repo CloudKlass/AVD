@@ -145,7 +145,7 @@ The main tasks for this exercise are as follows:
 
       |Setting|Value|
       |---|---|
-      |Applies to||Applies tothis folder|
+      |Applies to|Applies tothis folder|
       |Permissions|Allow Modify|
 
  #### Task 5: Preparing the AVD Hosts part 2.
