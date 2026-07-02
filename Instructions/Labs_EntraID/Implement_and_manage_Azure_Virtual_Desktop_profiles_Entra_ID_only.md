@@ -110,7 +110,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, search for and select Virtual Machine.
 
-1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter the following command
+1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command
 
   ```powershell
     reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters /v CloudKerberosTicketRetrievalEnabled /t REG_DWORD /d 1
