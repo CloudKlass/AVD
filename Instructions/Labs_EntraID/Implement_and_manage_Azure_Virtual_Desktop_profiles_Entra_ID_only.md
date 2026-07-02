@@ -149,7 +149,7 @@ The main tasks for this exercise are as follows:
       |Applies to|Applies to this folder|
       |Permissions|Allow Modify|
 
-    #### Task 6: Preparing the AVD Hosts part 2.
+   #### Task 6: Preparing the AVD Hosts part 2.
 
    1.  In the Azure portal, search for and select Virtual Machine.
 
