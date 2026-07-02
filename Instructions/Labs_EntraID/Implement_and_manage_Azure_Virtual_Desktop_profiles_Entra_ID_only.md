@@ -148,12 +148,12 @@ The main tasks for this exercise are as follows:
       |---|---|
       |Applies to|Applies to this folder|
       |Permissions|Allow Modify|
+    
+#### Task 6: Preparing the AVD Hosts part 2.
 
-   #### Task 6: Preparing the AVD Hosts part 2.
+1.  In the Azure portal, search for and select Virtual Machine.
 
-   1.  In the Azure portal, search for and select Virtual Machine.
-
-   2. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command. Remove [Replace with your storage account name] and replace with your storage account name.
+2. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command. Remove [Replace with your storage account name] and replace with your storage account name.
 
   ```powershell
     $profilePath = "\\[Replace with your storage account name].file.core.windows.net\fxlogix\Profiles" 
@@ -163,20 +163,20 @@ The main tasks for this exercise are as follows:
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "SizeInMBs" -Value 30000 -Type DWord
     Set-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "FlipFlopProfileDirectoryName" -Value 1 -Type DWord
   ```
-   3. Repeat this for the remaining host VMs
+3. Repeat this for the remaining host VMs
 
-   > **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
+> **Note**: Parts 1 and 2 of the host setup could be done by Intune or be built into the base image that you deploy.
 
-   #### Task 7: Test the file share.
+#### Task 7: Test the file share.
 
-   1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1. 
+1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1. 
 
-   2. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
+2. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
 
-   > **Note** You could launch the Virtual Desktop app logged in as User2 to test that a new profile is created for that user. 
+> **Note** You could launch the Virtual Desktop app logged in as User2 to test that a new profile is created for that user. 
+   
+> **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
     
-   > **Note** If you are not going straight onto the next lab run the following command to stop and deallocate the Azure VMs
-    
-   ```powershell
-    Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
-   ```
+ ```powershell
+ Get-AzVM -ResourceGroup 'az140-21-RG' | Stop-AzVM -NoWait -Force
+ ```
