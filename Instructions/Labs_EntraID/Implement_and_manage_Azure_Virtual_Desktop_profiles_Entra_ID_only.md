@@ -50,7 +50,7 @@ The main tasks for this exercise are as follows:
 
     > **Note**: If prompted, in the **Getting started** pane, in the **Subscription** drop-down list, select the name of the Azure subscription you are using in this lab and then select **Apply**.
 
-1.In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
+1. In the **Cloud Shell** run the following to start Azure Virtual desktop session host Azure VMs you will be using in this lab:
 
   ```powershell
     Get-AzVM -ResourceGroup 'az140-21-RG' | Start-AzVM
