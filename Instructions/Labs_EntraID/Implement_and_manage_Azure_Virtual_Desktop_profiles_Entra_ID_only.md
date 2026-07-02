@@ -152,7 +152,7 @@ The main tasks for this exercise are as follows:
 
    1.  In the Azure portal, search for and select Virtual Machine.
 
-   1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command.Remove [Replace with your storage account name] and replace with your storage account name.
+   1. Select the first VM that has a name starting SH1, under the Operations section select Run command, select RunPowerShellScript, enter and run the following command. Remove [Replace with your storage account name] and replace with your storage account name.
 
   ```powershell
     $profilePath = "\\[Replace with your storage account name].core.windows.net\fxlogix\Profiles" 
@@ -169,7 +169,7 @@ The main tasks for this exercise are as follows:
 
   #### Task 6: Test the file share.
 
-    1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1, 
+    1. You have already connected to the AVD environment in a previous lab, navigate to the Virtual Desktop app on the lab pc, launch the remote desktop session and connect as user1. 
 
     1. Navigate to the storage account and browse to the profiles folder where you should now see a profile for user1.
 
